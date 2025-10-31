@@ -1,11 +1,50 @@
 <html>
 <head>
   <title>instructions</title>
+  <style>
+    body {
+      background: linear-gradient(darkblue,lightblue);
+    }
+    .pageDiv {
+      backdrop-filter: blur(5px);
+      border: 2px solid black;
+      height: 97vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .headerDiv {
+      display: flex;
+      justify-content: center;
+    }
+    .headerDiv h1 {
+      font-family: 'Times New Roman';
+      background-color: gray;
+      border: 2px solid black;
+      box-shadow: 2px 0px 2px black;
+      height: 40px;
+    }
+    .gitDiv {
+      margin: 20px;
+      padding: 10px;
+      border: 2px solid black;
+      background-color: lightgray;
+      box-shadow: 2px 0px 2px black;
+    }
+
+
+  </style>
 </head>
 <body>
-    <div>
-      <div>
+    <div class="pageDiv">
+      <div class="headerDiv">
         <h1>Step-by-step instructions on how to set up Git and GitHub</h1>
+      </div>
+      <div class="gitDiv">
+        <h3>Git Set-up</h3>
+        <p>take the following steps to set up Git on your local machine:
+          <ol>
+            <li>Download and install Git from the official website: https://git-scm.com/downloads</li>
+        </p>
       </div>
     </div>
 </body>
