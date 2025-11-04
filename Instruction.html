@@ -8,7 +8,7 @@
     .pageDiv {
       backdrop-filter: blur(5px);
       border: 2px solid black;
-      height: 97vh;
+      height: auto;
       display: flex;
       flex-direction: column;
     }
@@ -18,10 +18,11 @@
     }
     .headerDiv h1 {
       font-family: 'Times New Roman';
-      background-color: gray;
+      background-color: lightgray;
       border: 2px solid black;
       box-shadow: 2px 0px 2px black;
       height: 40px;
+      padding: 10px;
     }
     .gitDiv {
       margin: 20px;
@@ -41,10 +42,56 @@
       </div>
       <div class="gitDiv">
         <h3>Git Set-up</h3>
-        <p>take the following steps to set up Git on your local machine:
-          <ol>
-            <li>Download and install Git from the official website: https://git-scm.com/downloads</li>
-        </p>
+          <p>Take the following steps to set up Git on your computer:</p>
+            <ol>
+              <li>Open your browser and go to the official website of Git: https://git-scm.com</li>
+              <li>Go to download, then Select which type of operating system(os) you are using.</li>
+              <li>Click the "click here to download" to download the latest vesion of Git(2.51.2)x64</li>
+              <li>Once downloaded, click install</li>
+              <li>To check if Git is now installed, go to an empty folder then right-click. If you see the Git bash, then it is   installed.
+              </li>
+           </ol>
+        <h3>VSCode Set-up</h3>
+          <p>Take the following steps to set up VS code on your computer:</p>
+            <ol>
+              <li>Open your browser and go to the official website of VS code: https://code.visualstudio.com</li>
+              <li>Go to download, then Select which type of operating system(os) you are using.</li>
+              <li>Click the "click here to download" to download the latest vesion of VS code</li>
+              <li>Once downloaded, click install</li>
+              <li>To check if VS code is now installed, go to files and type in the address bar "cmd" then enter.</li>
+              <li>In the command prompt, type "vs code" then enter. It will open VS code.</li>
+              <li>Once VS Code open, you can adjust its settings of your choice (auto save, spacing and so forth)</li>
+           </ol>
+        <h3>GitHub repository Set-up</h3>
+          <p>Take the following steps to set up your repository on your GitHub</p>
+            <ol>
+              <li>Open your browser and go to the official website of GitHub: https://github.com</li>
+              <li>Log in your account or Sign up if you don't have an account.</li>
+              <li>Once logged in, click the "+" icon on the top right corner of the page, then select "New repository".</li>
+              <li>Fill in the repository name and description (optional), then set to public.</li>
+              <li>Click "Create repository" to finish setting up your GitHub repository.</li>
+            </ol>
+          <h3>Connecting Git to GitHub repository including essential commands</h3>
+            <p>Take the following steps to connect you Git to your created GitHub repository:</p>
+            <ol>
+              <li>In VS Code, open Git Bash in the folder where you want to connect to your GitHub repository.</li>
+              <li>Open your browser and go to https://codemy.com/git/ and copy the commands to Initialize Git.<br>Enter these one by one to your Git bash terminal<br>
+                $ git init<br>
+                $ git config --global user.name "Your Name"<br>
+                $ git config --global user.email "you@youraddress.com"<br>
+                $ git config --global push.default matching<br>
+                $ git config --global alias.co checkout<br>
+              </li>
+              <li>Next, copy the commands to connect to your GitHub repository from the same page.<br>Enter these one by one to your Git bash terminal<br>
+                $ git init <br>
+                $ git add README.md <br>
+                $ git commit -m "first commit" <br>
+                $ git branch -M main <br>
+                $ git remote add origin (your repository URL) <br>
+                $ git push -u origin main  <br>
+              </li>
+              <li>Your local Git is now connected to your GitHub repository.</li>
+            </ol>
       </div>
     </div>
 </body>
